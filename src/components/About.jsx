@@ -7,10 +7,9 @@ import CountUp from "react-countup";
 function About() {
   const [counterOn, setCounterOn] = useState(false);
 
-  // نستخدم useInView عشان نعرف متى العنصر يدخل الشاشة
   const { ref, inView } = useInView({
-    triggerOnce: true, // يشتغل مرة واحدة فقط
-    threshold: 0.3,    // يعني لازم 30% من العنصر تظهر
+    triggerOnce: true, 
+    threshold: 0.3,    
     onChange: (inView) => setCounterOn(inView),
   });
 
@@ -47,7 +46,6 @@ function About() {
           </div>
         </div>
 
-        {/* العدادات */}
         <div ref={ref} className="mt-10 flex flex-wrap  gap-10">
           <div className="flex flex-col items-center text-center">
             <h1 className="font-bold text-3xl md:text-4xl text-[#33CCCC]">

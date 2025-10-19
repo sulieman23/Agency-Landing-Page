@@ -38,24 +38,24 @@ const Testimonials = () => {
     dots: true,
     arrows: true,
     infinite: true,
-    speed: 1500, // 👈 الحركة أبطأ (كل انتقال يستغرق 1.5 ثانية)
-    slidesToShow: 3, // 👈 عرض 3 كروت في نفس الوقت
+    speed: 1500,
+    slidesToShow: 3, 
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // 👈 كل 4 ثواني ينتقل تلقائياً
-    cssEase: "ease-in-out", // 👈 حركة ناعمة أكثر
+    autoplaySpeed: 2000, 
+    cssEase: "ease-in-out",
     pauseOnHover: true,
     pauseOnFocus: true,
     responsive: [
       {
-        breakpoint: 1024, // أقل من 1024px → يعرض كرتين
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 640, // أقل من 640px → يعرض كرت واحد
+        breakpoint: 640, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

@@ -6,12 +6,9 @@ import { motion } from 'framer-motion'
 const Hero = () => {
   return (
     <div style={{
-      height: '600px',
-      backgroundImage: `url(${bg})`,
-      overlay: '#11111',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      zIndex: -1
+       backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
     }}
       className='relative z-10'>
       <div className='absolute inset-0 bg-black opacity-85'></div>
@@ -22,7 +19,7 @@ const Hero = () => {
             initial={{opacity:0, x:-100}}
             whileInView={{opacity:1, x:0}}
             transition={{duration:1, delay:0.5}}
-            className='text-white text-lg lg:text-xl'>Digital Marketing Agency____</motion.h3>
+            className='text-white text-lg lg:text-xl mt-32'>Digital Marketing Agency____</motion.h3>
             <motion.h1 
             initial={{opacity:0, x:-100}}
             whileInView={{opacity:1, x:0}}

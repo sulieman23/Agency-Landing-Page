@@ -43,14 +43,13 @@ function Navbar() {
     <motion.div
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 1 }} // ⏱ نفس التأخير مع الهيرو
+      transition={{ duration: 1, delay: 1 }} 
       className="bg-gray-950 py-3 fixed top-0 left-0 w-full z-[9999] shadow-md"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center px-5">
           <div className="font-bold text-[#33CCCC] text-4xl">Logo</div>
 
-          {/* روابط اللابتوب */}
           <ul className="lg:flex gap-6 items-center font-semibold text-white text-xl hidden">
             {navLinks.map((link) => (
               <li key={link.name}>
@@ -67,7 +66,6 @@ function Navbar() {
             </button>
           </ul>
 
-          {/* زر الموبايل */}
           <Menu
             onClick={NabHandler}
             className="lg:hidden text-white cursor-pointer"
@@ -75,7 +73,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* قائمة الموبايل */}
       <AnimatePresence>
         {open && (
           <motion.nav
@@ -103,8 +100,6 @@ function Navbar() {
                 </button>
               </motion.li>
             </motion.ul>
-
-            {/* زر الإغلاق */}
             <X
               onClick={NabHandler}
               className="absolute top-10 right-10 cursor-pointer border border-[#33CCCC] text-white p-1 rounded-md"
